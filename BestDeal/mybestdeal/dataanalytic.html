@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>This is the best deal website</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+    
+    <header>
+    	<h1><a href="/">BEST<span>Deal</span></a></h1>
+        <h2>Enjoy Shopping with us</h2>
+    </header>
+    
+    <nav>
+    	<ul>
+            
+        	<li class=""><a href="salseman">Salseman</a></li>
+            <li class=""><a href="orderservlet">Order</a></li>
+            <li><a href="login">Login</a></li>
+            <li><a href="register">Register</a></li>
+            <li><a href="logout">Logout</a></li>
+            <li class="end" style="float: right;"><a href="addtocart">Cart</a></li>
+            <li class="end" align="right" style="float: right;"><a href="">Welcome <span style="color: rgb(218, 4, 34); font-size: large;"><b>guest</b></span></a></li>
+        </ul>
+    </nav>
+
+
+    <div id="body">
+        
+        
+        <div class="sidebar">
+            <ul>    
+               <li>
+                    <h4>Categories</h4>
+                    <ul>
+                        <li ><a href="trending" style="color: red; background-color: yellow; font-size: 120%;"><b>Trending</b></a></li>
+                        <li ><a href="dataanalytic.html" style="color: red; background-color: yellow; font-size: 120%;"><b>Dataanalytics</b></a></li>
+                        <li><a href="smartphone">SmartPhone</a></li>
+                        <li><a href="tablet">Tablet</a></li>
+                        <li><a href="laptop">Laptop</a></li>
+                        <li><a href="tv">TV</a></li>
+                        <li><a href="accessories">Accessories</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        
+                    </ul>
+                </li>
+
+               
+            
+            </ul>   
+
+        </div>
+
+      
+
+    
+<div id='content'> 
+<form method="get" class="searchform" action="dataanalyticservlet">
+<table>
+        <tr>
+                <td colspan = "4"> <b> Do Serach Here </b> </td>
+        </tr>
+
+        <tr>
+                                <td> <input type="checkbox" name="productnamecheckbox" value="productName" checked> Select </td>
+                                <td> Product Name: </td>
+                                <td>
+                                    <select name="productName">
+                                        <option value="ALL_PRODUCTS">All Products</option>
+                                        <option value="phone1">phone1</option>
+                                        <option value="phone2">phone2</option>
+                                        <option value="phone3">phone3</option>
+                                        <option value="phone4">phone4</option>
+                                        <option value="phone5">phone5</option>
+                                        <option value="Tablet1">Tablet1</option>
+                                        <option value="Tablet2">Tablet2</option>
+                                        <option value="Tablet3">Tablet3</option>
+                                        <option value="Tablet4">Tablet4</option>
+                                        <option value="Tablet5">Tablet5</option>
+                                        <option value="Laptop1">Laptop1</option>
+                                        <option value="Laptop2">Laptop2</option>
+                                        <option value="Laptop3">Laptop3</option>
+                                        <option value="Laptop4">Laptop4</option>
+                                        <option value="Laptop5">Laptop5</option>
+                                        
+                                </td>
+                                <td> </td>
+        </tr>
+
+        <tr>
+                                <td> <input type="checkbox" name="productnamecheckbox" value="productPrice"> Select </td>
+                                <td> Product Price: </td>
+                                <td>
+                                    <input type="number" name="pprice" value = "0" size=10 class="s" /> </td>
+                                <td>
+                                    <input type="radio" name="ppricecompare" value="EQUALSTO" checked> Equals <br>
+                                    <input type="radio" name="ppricecompare" value="GREATERTHAN"> Greater Than <br>
+                                    <input type="radio" name="ppricecompare" value="LESSTHAN"> Less Than
+                                </td>
+                <td> </td>
+                            </tr>
+
+                             <tr>
+                                <td> <input type="checkbox" name="productnamecheckbox" value="retailerZipcode"> Select </td>
+                                <td> Retailer Zipcode: </td>
+                                <td>
+                                    <input type="number" name="pzipcode" value = "0" size=10/> </td>
+                                <td> </td>
+                            </tr>
+
+                            <tr>
+                                <td> <input type="checkbox" name="productnamecheckbox" value="retailerCity"> Select </td>
+                                <td> Retailer City: </td>
+                                <td>
+                                    <input type="text" name="pcity" value = "All" class="s" /> </td>
+                                <td> </td>
+                            </tr>
+
+                             <tr>
+                                <td> <input type="checkbox" name="productnamecheckbox" value="reviewRating"> Select </td>
+                                <td> Review Rating: </td>
+                                <td>
+                                    <select name="previewrating">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                </td>
+                                <td>
+                                    <input type="radio" name="pcomparerate" value="EQUALSTO" checked> Equals <br>
+                                    <input type="radio" name="pcomparerate" value="GREATERTHAN"> Greater Than <br>
+                                    <input type="radio" name="pcomparerate" value="LESSTHAN"> Less Than
+                                </td>
+                <td> </td>
+                            </tr>
+
+                            <tr>
+              <td> <input type="checkbox" name="productnamecheckbox" value="productCategory"> Select </td>
+              <td> Product Category: </td>
+              <td>
+                  <select name="productCategory">
+                      <option value="smartphone" selected>Smart Phone</option>
+                      <option value="tablet">Tablet</option>
+                      <option value="laptop">Laptop</option>
+                      <option value="tv">TV</option>
+              </td>
+<td> </td>
+            </tr>
+
+            <tr>
+<td> <input type="checkbox" name="productnamecheckbox" value="retailerName"> Select </td>
+                <td> Retailer Name: </td>
+                <td>
+                    <input type="text" name="pretailername" value = "sony" /> </td>
+<td> </td>
+            </tr>
+
+            <tr>
+<td> <input type="checkbox" name="productnamecheckbox" value="retailerState"> Select </td>
+                <td> Retailer State: </td>
+                <td>
+                    <input type="text" name="pretailerstate" value = "IL" class="s" /> </td>
+<td> </td>
+            </tr>
+
+            <tr>
+              <td> <input type="checkbox" name="productnamecheckbox" value="productSale"> Select </td>
+              <td> Product On Sale?: </td>
+              <td>
+                  <select name="productonsale">
+                      <option value="Yes" selected>Yes</option>
+                      <option value="No">No</option>
+              </td>
+<td> </td>
+            </tr>
+
+            <tr>
+<td> <input type="checkbox" name="productnamecheckbox" value="userID"> Select </td>
+                <td> User ID: </td>
+                <td>
+                    <input type="text" name="puserID" value = "nitu" class="s" /> </td>
+<td> </td>
+            </tr>
+
+            <tr>
+<td> <input type="checkbox" name="productnamecheckbox" value="userAge"> Select </td>
+                <td> User Age: </td>
+                <td>
+                    <input type="number" name="puserAge" value = "0" class="s" size=2/> </td>
+
+                    <td>
+                      <input type="radio" name="pcmrage" value="EQUALSTO" checked> Equals <br>
+                      <input type="radio" name="pcmrage" value="GREATERTHAN"> Greater Than <br>
+                      <input type="radio" name="pcmrage" value="LESSTHAN"> Less Than
+                    </td>
+<td> </td>
+            </tr>
+
+            <tr>
+              <td> <input type="checkbox" name="productnamecheckbox" value="userGender"> Select </td>
+              <td> User Gender: </td>
+              <td>
+                  <select name="puserGender">
+                      <option value="Male" selected>Male</option>
+                      <option value="Female">Female</option>
+              </td>
+<td> </td>
+            </tr>
+
+            <tr>
+<td> <input type="checkbox" name="productnamecheckbox" value="userOccupation"> Select </td>
+                <td> User Occupation: </td>
+                <td>
+                    <input type="text" name="puserOccupation" value = "Student" class="s" /> </td>
+<td> </td>
+            </tr>
+
+            <tr>
+              <td> <input type="checkbox" name="productnamecheckbox" value="manuName"> Select </td>
+              <td> Manufacturer Name: </td>
+              <td>
+                  <select name="pmanuName">
+                      <option value="samsung" selected>samsung</option>
+                      <option value="Sony">Sony</option>
+                      <option value="nexus">nexus</option>
+                      <option value="Dell">Dell</option>
+                      
+              </td>
+<td> </td>
+            </tr>
+
+            <tr>
+              <td> <input type="checkbox" name="productnamecheckbox" value="manuRebate"> Select </td>
+              <td> Manufacturer Rebate: </td>
+              <td>
+                  <select name="manuRebate">
+                      <option value="Yes" selected>Yes</option>
+                      <option value="No">No</option>
+              </td>
+<td> </td>
+            </tr>
+
+            <tr>
+<td> <input type="checkbox" name="productnamecheckbox" value="reviewDate"> Select </td>
+                <td> Review Date: </td>
+                <td>
+                    <input type="date" name="previewDate"/> </td>
+<td>
+  <input type="radio" name="pcmprdate" value="EQUALSTO" checked> Equals <br>
+  <input type="radio" name="pcmprdate" value="GREATERTHAN"> Greater Than <br>
+  <input type="radio" name="pcmprdate" value="LESSTHAN"> Less Than
+</td>
+<td> </td>
+            </tr>
+
+                <tr>
+                                <td>
+                                    Top 5/10/:
+                                </td>
+                                <td>
+                                    <select name="returnValue">
+                                        <option value="ALL" selected>All</option>
+                                        <option value="TOP_2">Top 2 </option>
+                                        <option value="TOP_3">Top 3 </option>
+                                        <option value="TOP_5">TOP 5 </option>
+                                      
+                                </td>
+
+                                <td>
+                                 
+                                </td>
+                                <td>
+                                 
+                                </td>
+                                                        </tr>
+                            <tr>
+                                <td colspan = "4"> <b> Grouping </b> </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <input type="checkbox" name="groupbycheckbox" value="GROUP_BY"> Group By
+                                </td>
+                                <td colspan = "1">
+                                <select name="groupByDropdown">
+                                        <option value="GROUP_BY_CITY" selected>City</option>
+                                        <option value="GROUP_BY_PRODUCT">Product Name</option>
+                                        <option value="GROUP_BY_ZIPCODE">Zip Code</option>
+                                        <option value="GROUP_BY_STATE">State</option>
+                                        <option value="GROUP_BY_PROCAT">Product Category</option>
+                                        <option value="GROUP_BY_PRICE">Price</option>
+                                        <option value="GROUP_BY_RATING">Rating</option>
+                                        <option value="GROUP_BY_SALE">Sale</option>
+                                        <option value="GROUP_BY_MNAME">Manufacturer Name</option>
+                                        <option value="GROUP_BY_MREBATE">Manufacturer Rebate</option>
+                                        <option value="GROUP_BY_USERID">User ID</option>
+                                        <option value="GROUP_BY_AGE">User Age</option>
+                                        <option value="GROUP_BY_GENDER">User Gender</option>
+                                        <option value="GROUP_BY_OCCU">User Occupation</option>
+                                        <option value="GROUP_BY_DATE">Review Date</option>
+                                        <option value="GROUP_BY_RNAME">Retailer Name</option>
+                                </td>
+                                <td>
+                                   
+                                </td>
+
+                                <td>
+                                               
+                                                </td>
+
+
+                            </tr>
+
+                            <tr>
+                                <td colspan = "4"> <input type="submit" value="SerchData" class="formbutton" /> </td>
+
+                            </tr>
+                        </table>
+
+</table>
+</select><form>
+
+</div>
+    
+    <div class="clear"></div>
+        
+ </div>
+
+    <footer>      
+        <div class="footer-bottom">
+            <p>CSP-595 BY <a href="https://science.iit.edu/computer-science/programs/course-descriptions">Illinoise Institute of Technology</a> by Hiral Ramani A20370004</p>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>This is the best deal website</title>
+<script type="text/javascript" src="javascript.js"></script>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+
+<div id="container">
+    
+    <header>
+    	<h1><a href="/">BEST<span>Deal</span></a></h1>
+        <h2>Enjoy Shopping with us</h2>
+    </header>
+    
+    <nav>
+    	<ul>
+            
+        	<li class=""><a href="salseman">Salseman</a></li>
+          <li><a href="manager">Manager</a></li>
+            <li class=""><a href="orderservlet">Order</a></li>
+            <li><a href="login">Login</a></li>
+            <li><a href="register">Register</a></li>
+            <li><a href="logout">Logout</a></li>
+            <li class="end" style="float: right;"><a href="addtocart">Cart</a></li>
+            <li class="end" align="right" style="float: right;"><a href="">Welcome <span style="color: rgb(218, 4, 34); font-size: large;"><b>guest</b></span></a></li>
+        </ul>
+    </nav>
+ 
+
+    <body onload="init()">
+
+    <form name="autofillform" action="ajaxfunctionProf" style="background-color: #eee;">
+      <table border="0" cellpadding="3"> 
+        <tbody>
+          <tr>
+            <td><strong style="color: red; font-weight: bolder;">Search Product:</strong></td>
+                        <td>
+                            <input type="text"
+                       size="40" 
+                       id="complete-field"
+                                   onkeyup="doCompletion()">
+                        </td>
+          </tr>
+          <tr>
+              <td id="auto-row" colspan="2">
+                <table id="complete-table" class="popupBox" />
+              </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    </body>
